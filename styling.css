@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Jura:wght@700&family=Kalam:wght@300&family=Neucha&display=swap');
+* {  
+    text-decoration: none;
+    vertical-align: center;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #222222;
+    color: whitesmoke;
+  }
+
+  h1 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+  }
+
+  .ctnr {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;  /* key rule */
+    grid-template-columns: 1fr;
+    height: 100vh;
+    grid-template-areas:'nav' 
+                        'header' 
+                        'main' 
+                        'footer';
+  }
+  
+  header {
+    grid-area: header;
+    text-align: center;
+  }
+  
+  nav {
+        grid-area: nav;
+        text-align: center;
+        position: sticky;
+      }
+
+  
+  main {
+    grid-area: main;
+  }
+  
+   .footer {
+            grid-area: footer;
+            background-color: yellow;
+            text-align: center;
+            background-color: whitesmoke;
+            color:#222222;
+        
+          }
+
+
+/* nav bar page links */
+
+  .page_links {  
+    display: flex;
+    justify-content:flex-end;
+    height: 100%;
+  }
+
+  .page_links {  
+    /* list reset */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+  
+  .page_links li {
+    padding: 10px;
+
+  }
+  
+  .page_links a {
+    text-decoration: none;  
+    color: whitesmoke;
+    font-family: 'Jura', sans-serif;
+    font-size: large
+  }
+
+  .page_links a:hover {
+    color: #FFD802
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #222222
+  }
+  
+  .fa:hover {
+    color: #FFD802
+  }   
